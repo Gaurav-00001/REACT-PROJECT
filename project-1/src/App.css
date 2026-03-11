@@ -1,0 +1,72 @@
+:root {
+  --red:   #d01c28;
+  --gray: #2e2e2e;
+}
+body{
+  font-family: "poppins" , sans-serif;
+}
+button{
+  all: unset;
+  padding: 6px 16px;
+  background: var(--red);
+  height: 32px;
+  color: aliceblue;
+  font-weight: 500;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 72px;
+  align-items: center;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 24px;
+
+}
+/* Ensure the hero takes up significant screen height */
+.hero {
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  align-items: center;
+  height: calc(100vh - 72px); /* Adjusts for navbar height */
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-weight: 800;
+  font-size: 108px; /* High-impact size */
+  line-height: 102px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-weight: 600;
+  color: #5a5959;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+.shopping {
+  margin-top: 36px;
+}
+
+.shopping p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.brand-icons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.brand-icons img {
+  height: 32px; /* This keeps them small and uniform */
+  width: auto;
+  object-fit: contain;
+}
